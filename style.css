@@ -1,18 +1,69 @@
 /*Root kontrollerarvärden som jag kan använda */
 :root {
-    --color-purple: rgba(194, 81, 194, 0.466);
-    --color-background: #ece8e8;
-    --color-box: rgb(241, 241, 241);
-    --color-text: #000000; 
+    --color-purple: #6D035F;
+    --color-background:#DFDFDF;
+    --color-box: #FFFFFF;
+    --color-text: #000000;
+    --color-grey: #797575; 
 
-    --font-heading: "Josefin Sans", "Sans serif"
+    --color-link: #000000;
+    --color-link-hover: #6D035F;
 
-    --max-widht: 1040;
+    --font-heading: "Poppins", "Sans serif";
+
+    --max-width: 1040px;
     --spacing: 20px;
 }
-{
+*{
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: "Poppins", sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+    color: var(--color-link);
+}
+
+a:hover,
+a:active {
+    color: var(--color-link-hover);
+}
+
+/* Header*/
+#header {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto 32px;
+    padding: 16px 0;
+    text-align: center;
+}
+
+#header img {
+    display: block;
+    width: 40px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.nav a {
+    font-size: 15px;
+}
+
 /* Typografi*/
 h1 {
     font-family: var(--font-heading);
@@ -20,17 +71,118 @@ h1 {
     font-weight: 600;
     line-height: 1.15;
     margin: 0 auto 16px;
-    color: var(--color-purple)
+    color: var(--color-text);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-purple);
+    margin-bottom: 12px;
+}
+
+p {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--color-grey);
+    margin-bottom: 12px;
 }
 
 section {
     padding: 0 24px
 }
 
+
 .box {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 32px;
     background-color: var(--color-box);
+    padding: 60px 24px;
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0;
+}
+
+.image {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto 32px;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.columns {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto 32px;
+    padding: 24px 16px;
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+.columns > div {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.columns img {
+    display: block;
+    width: calc((100% - 12px) / 3);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+#rad {
+    background-color: var(--color-background);
+}
+
+#rad img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 141px;
+    object-fit: cover;
+    margin: 0 auto 8px;
 }
 
 .footer {
-    background-color: var(--color-background);
+    display: flex;
+    width: 90%;
+    max-width: var(--max-width);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: var(--color-purple);
+    text-align: center;
+}
+
+.footer h2 {
+    color: var(--color-box);
+}
+
+.footer img {
+    display: block;
+    width: 24px;
+    height: auto;
+    margin: 0 auto;
 }
