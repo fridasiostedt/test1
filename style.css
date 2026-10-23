@@ -1,0 +1,36 @@
+/*Root kontrollerarvärden som jag kan använda */
+:root {
+    --color-purple: rgba(194, 81, 194, 0.466);
+    --color-background: #ece8e8;
+    --color-box: rgb(241, 241, 241);
+    --color-text: #000000; 
+
+    --font-heading: "Josefin Sans", "Sans serif"
+
+    --max-widht: 1040;
+    --spacing: 20px;
+}
+{
+    box-sizing: border-box;
+}
+/* Typografi*/
+h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.15;
+    margin: 0 auto 16px;
+    color: var(--color-purple)
+}
+
+section {
+    padding: 0 24px
+}
+
+.box {
+    background-color: var(--color-box);
+}
+
+.footer {
+    background-color: var(--color-background);
+}
